@@ -1,0 +1,552 @@
+<!DOCTYPE html>
+<html lang="zh-CN">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>亚太HUB 用户个人信息保护及隐私政策</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "PingFang SC", "Hiragino Sans GB", 
+                         "Microsoft YaHei", "Helvetica Neue", Helvetica, Arial, sans-serif;
+            line-height: 1.8;
+            color: #333;
+            background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+            padding: 20px;
+        }
+
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: #fff;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+            overflow: hidden;
+        }
+
+        .header {
+            background: linear-gradient(135deg, #366CDF 0%, #1F69F4 100%);
+            color: #fff;
+            padding: 40px 30px;
+            text-align: center;
+        }
+
+        .header h1 {
+            font-size: 28px;
+            font-weight: 600;
+            margin-bottom: 12px;
+            letter-spacing: 1px;
+        }
+
+        .header .update-date {
+            font-size: 14px;
+            opacity: 0.95;
+            font-weight: 300;
+        }
+
+        .content {
+            padding: 40px 30px;
+        }
+
+        .intro {
+            background: #f8f9fa;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border-left: 4px solid #366CDF;
+        }
+
+        .intro p {
+            margin-bottom: 15px;
+            text-align: justify;
+        }
+
+        .intro p:last-child {
+            margin-bottom: 0;
+        }
+
+        .toc {
+            background: #fff;
+            padding: 25px;
+            border-radius: 8px;
+            margin-bottom: 30px;
+            border: 1px solid #e9ecef;
+        }
+
+        .toc h3 {
+            color: #366CDF;
+            font-size: 18px;
+            margin-bottom: 15px;
+            font-weight: 600;
+        }
+
+        .toc ol {
+            padding-left: 20px;
+        }
+
+        .toc li {
+            margin-bottom: 8px;
+            color: #555;
+        }
+
+        .section {
+            margin-bottom: 40px;
+        }
+
+        .section-title {
+            color: #366CDF;
+            font-size: 22px;
+            font-weight: 600;
+            margin-bottom: 20px;
+            padding-bottom: 10px;
+            border-bottom: 2px solid #366CDF;
+        }
+
+        .subsection {
+            margin-bottom: 20px;
+        }
+
+        .subsection-title {
+            color: #1F69F4;
+            font-size: 16px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .content p {
+            margin-bottom: 15px;
+            text-align: justify;
+            color: #555;
+        }
+
+        .content ul,
+        .content ol {
+            margin-bottom: 15px;
+            padding-left: 25px;
+        }
+
+        .content li {
+            margin-bottom: 10px;
+            color: #555;
+        }
+
+        .highlight {
+            background: #fff3cd;
+            padding: 3px 6px;
+            border-radius: 3px;
+            font-weight: 500;
+        }
+
+        .sdk-card {
+            background: #f8f9fa;
+            padding: 20px;
+            border-radius: 8px;
+            margin-bottom: 20px;
+            border-left: 4px solid #366CDF;
+        }
+
+        .sdk-card h4 {
+            color: #1F69F4;
+            font-size: 18px;
+            font-weight: 600;
+            margin-bottom: 12px;
+        }
+
+        .sdk-card p {
+            margin-bottom: 8px;
+        }
+
+        .sdk-card p strong {
+            color: #333;
+            display: inline-block;
+            min-width: 120px;
+        }
+
+        .sdk-card a {
+            color: #366CDF;
+            word-break: break-all;
+            text-decoration: none;
+        }
+
+        .sdk-card a:hover {
+            text-decoration: underline;
+        }
+
+        .footer {
+            background: #f8f9fa;
+            padding: 30px;
+            text-align: center;
+            color: #666;
+            font-size: 14px;
+            border-top: 1px solid #e9ecef;
+        }
+
+        .important {
+            background: #fff3cd;
+            border-left: 4px solid #ffc107;
+            padding: 15px 20px;
+            margin: 20px 0;
+            border-radius: 4px;
+        }
+
+        .important p {
+            color: #856404;
+            margin: 0;
+        }
+
+        /* 响应式设计 */
+        @media (max-width: 768px) {
+            body {
+                padding: 10px;
+            }
+
+            .header {
+                padding: 30px 20px;
+            }
+
+            .header h1 {
+                font-size: 24px;
+            }
+
+            .content {
+                padding: 30px 20px;
+            }
+
+            .section-title {
+                font-size: 20px;
+            }
+
+            .intro,
+            .toc {
+                padding: 20px;
+            }
+        }
+
+        /* 打印样式 */
+        @media print {
+            body {
+                background: #fff;
+                padding: 0;
+            }
+
+            .container {
+                box-shadow: none;
+                border-radius: 0;
+            }
+
+            .header {
+                background: #366CDF;
+                -webkit-print-color-adjust: exact;
+                print-color-adjust: exact;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <!-- 头部 -->
+        <div class="header">
+            <h1>亚太HUB 用户个人信息保护及隐私政策</h1>
+            <p class="update-date">本隐私政策于2026年7月22日更新</p>
+        </div>
+
+        <!-- 主要内容 -->
+        <div class="content">
+            <!-- 引言 -->
+            <div class="intro">
+                <p>亚太HUB由주식회사 아이메이그룹（以下简称"我们"或"亚太HUB"）联合开发、运营。亚太HUB非常尊重并保护所有使用服务用户的个人隐私权。请在使用我们的产品/服务前，仔细阅读并了解《亚太HUB用户个人信息保护及隐私政策》（以下简称"本政策"）。</p>
+                
+                <p>本政策适用于我们提供的在各大互联网平台上架的"亚太HUB"APP等所有形式的同名产品（以下简称"亚太HUB"或"产品"）。您访问"亚太HUB"使用我们提供的"亚太HUB"，以及未设独立个人信息保护及隐私政策的我们的"亚太HUB"网站、服务器及/或登录相关客户端，均适用本政策。</p>
+                
+                <p>需要特别说明的是，本政策不适用于其他第三方向您提供的服务，第三方向您提供的服务适用该第三方向您说明的个人信息保护及隐私政策。在使用"亚太HUB"产品或服务前，请您务必仔细阅读并透彻理解本政策，特别是以<span class="highlight">粗体/粗体下划线</span>标识的条款，您应重点阅读，在确认充分理解并同意后再开始使用。如对本政策内容有任何疑问、意见或建议，您可通过我们提供的各种联系方式与我们联系。</p>
+            </div>
+
+            <!-- 目录 -->
+            <div class="toc">
+                <h3>我们将通过本政策帮助您了解以下内容：</h3>
+                <ol>
+                    <li>我们收集信息的范围、目的和方式</li>
+                    <li>我们如何存储和保护您的个人信息</li>
+                    <li>个人敏感信息</li>
+                    <li>我们如何共享、转移、披露您的个人信息</li>
+                    <li>您的权利：您如何管理、修改及删除您的个人信息</li>
+                    <li>Cookie和第三方应用工具包</li>
+                    <li>关于未成年人的个人信息</li>
+                    <li>本政策的修订</li>
+                </ol>
+            </div>
+
+            <!-- 第一部分 -->
+            <div class="section">
+                <h2 class="section-title">一、我们收集信息的范围、目的和方式</h2>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">1.1 账号注册与登录</h3>
+                    <p>在您注册、登录亚太HUB时，您需要提供邮箱/账号及密码；注册时还需提供姓名、性别、出生日期、护照号码、手机号等身份信息，您也可以选择拍摄或上传护照照片，由系统识别并自动回填上述信息。收集这些信息是为了帮助您完成注册审核、登录认证、识别您的账号、展示个人信息以及进行权限管理。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.2 设备信息收集</h3>
+                    <p>在您使用亚太HUB网络服务，或访问亚太HUB平台时，亚太HUB接收并记录您的移动端、浏览器和计算机上的信息，包括但不限于您的设备型号、设备制造商、配置信息、IP地址、浏览器的类型、使用的语言、访问日期和时间、软硬件特征信息、设备IMEI、MAC地址，收集这些信息是为了向您提供合适的语言服务、产品统计分析及安全防护。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.3 素材上传功能</h3>
+                    <p>当您使用亚太HUB的素材上传功能时，您至少需要提供内容描述、素材分类、医院/机构名称等信息。我们收集这些信息，是为了向您提供素材管理服务、任务完成统计、积分奖励计算，以及提供部门可见范围控制等功能。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.4 系统权限</h3>
+                    <p>为了快捷、便利地向您提供相关的服务，我们在您同意拍照或上传相关文件时需要您：</p>
+                    <ol>
+                        <li>开通终端系统的相机权限，用于拍摄照片和视频；</li>
+                        <li>使用终端系统的相册/存储权限，用于读取和存储图片、视频、文档等文件；</li>
+                        <li>使用网络权限，用于上传素材至服务器。</li>
+                    </ol>
+                    <p>除用于您所确认的产品/服务、法律法规规定需要披露以及国家行政机关、司法机关要求出示以外，亚太HUB对您上传的文件采取保密措施且不另作他用。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.5 兼职任务功能</h3>
+                    <p>当您使用兼职任务功能时，我们会记录您的接单记录、任务资料录入信息、每日打卡记录、结算与提现记录、任务群聊消息等信息，用于任务管理、工作统计、报酬结算及消息协作。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.6 客服与反馈</h3>
+                    <p>为了方便与您联系或帮助您解决问题，在您向我们提起意见反馈、投诉或进行咨询时，我们需要您提供姓名、联系方式等个人信息。如您拒绝提供上述信息，我们将无法向您及时反馈意见、投诉或咨询结果。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.7 授权同意</h3>
+                    <p>我们会在得到您的同意后收集和使用您的个人信息以实现本产品相应的功能，并允许您对这些个人信息的收集与使用做出不同意的选择，但是拒绝使用这些信息会影响您使用相应的功能。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.8 法律豁免情形</h3>
+                    <p>根据相关法律法规及国家标准，以下情形中我们会处理您的相关个人信息，无需征求您的授权同意：</p>
+                    <ol>
+                        <li>为订立、履行个人作为一方当事人的合同所必需；</li>
+                        <li>为履行法定职责或者法定义务所必需；</li>
+                        <li>为应对突发公共卫生事件，或者紧急情况下为保护自然人的生命健康和财产安全所必需；</li>
+                        <li>为公共利益实施新闻报道、舆论监督等行为，在合理的范围内处理个人信息；</li>
+                        <li>依照法律、行政法规的规定在合理的范围内处理个人自行公开或者其他已经合法公开的个人信息；</li>
+                        <li>公安机关、国家安全机关因依法维护国家安全或侦查犯罪所需调取的个人信息；</li>
+                        <li>法律、行政法规规定的其他情形。</li>
+                    </ol>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">1.9 剪切板访问</h3>
+                    <p>在您分享作品、参加活动等情形下，我们需要在本地访问您的剪切板，读取其中包含的口令、分享码、链接，以实现跳转、分享、活动联动等功能或服务。我们仅在本地识别出剪切板内容属于跳转、分享、活动联动等指令时才会将其上传我们的服务器。除此之外，我们不会上传您剪切板的其他信息至我们的服务器。</p>
+                </div>
+            </div>
+
+            <!-- 第二部分 -->
+            <div class="section">
+                <h2 class="section-title">二、我们如何存储和保护您的个人信息</h2>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">2.1 您的个人信息存储</h3>
+                    <p>我们会按照适用法律法规的要求存储您的个人信息，存储期限为实现本政策所述目的所必需的期间。如涉及个人信息的跨境传输，我们将依照适用法律法规履行相应义务，并采取措施保障您的个人信息安全。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">2.2 技术措施与数据安全措施</h3>
+                    <p><strong>2.2.1</strong> 我们努力采取各种符合业内标准的物理、电子和管理方面的安全措施来保护您的个人信息安全，以防止您的个人信息遭到未经授权的访问、公开披露、使用、修改、损坏或丢失。</p>
+                    <p><strong>2.2.2</strong> 我们通过与信息接触者签署保密协议和监控机制来对数据进行全面安全控制，以防止您的个人信息遭到未经授权的访问、公开披露、使用、修改、损坏或丢失。</p>
+                    <p><strong>2.2.3</strong> 当我们的产品或服务发生停止运营的情形时我们将以推送通知、公告等形式通知您，并删除您的个人信息或进行匿名化处理。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">2.3 安全事件处理</h3>
+                    <p>我们将尽力确保您发送给我们的任何信息的安全性，但请您理解，由于技术的限制以及在互联网行业存在的各种恶意手段，互联网并非百分之百安全的环境。您需要了解，您接入我们服务所用的系统和通讯网络，或因我们可控范围外的因素而出现问题。为防止安全事故的发生，我们制定了妥善的预警机制和应急预案。若不幸发生个人信息安全事件，我们将按照法律法规的要求，及时向您告知：安全事件的基本情况和影响、我们已采取或将要采取的处置措施、您可自主防范和降低风险的建议和对您的补救措施，并立即启动应急预案，力求将损失最小化。我们将及时将事件相关情况以电话、推送通知等方式告知您，难以逐一告知用户时，我们会采取合理、有效的方式发布公告。同时，我们还将按照监管部门要求，主动上报个人信息安全事件的处置情况，紧密配合政府机关的工作。</p>
+                </div>
+            </div>
+
+            <!-- 第三部分 -->
+            <div class="section">
+                <h2 class="section-title">三、个人敏感信息</h2>
+                <div class="important">
+                    <p>个人敏感信息是指一旦泄露、非法提供或滥用将会危害人身和财产安全，极易导致个人名誉、身心健康受到损害或歧视性待遇等的个人信息。</p>
+                </div>
+                <p>本政策中涉及的个人敏感信息包括：</p>
+                <ul>
+                    <li><strong>个人身份信息：</strong>包括用户名、用户ID、姓名、性别、出生日期、护照号码、头像、部门信息、以及与前述有关的密码、口令</li>
+                    <li><strong>网络身份标识信息：</strong>包括系统账号、登录凭证、以及与前述有关的密码、口令</li>
+                    <li><strong>个人上传的工作文件：</strong>包括图片、视频、文档及其相关元数据</li>
+                </ul>
+                <p>这些个人敏感信息将受到严格保护。亚太HUB在此提醒您，您在使用亚太HUB为您提供的产品/服务时所上传或发布的内容和信息将会根据您设置的可见范围进行权限控制，因此，您需要在使用我们为您提供的产品/服务前谨慎考虑。您同意这些个人敏感信息将按照本政策阐明的目的和方式来进行处理。</p>
+            </div>
+
+            <!-- 第四部分 -->
+            <div class="section">
+                <h2 class="section-title">四、我们如何共享、转移、披露您的个人信息</h2>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">4.1 信息共享</h3>
+                    <p>除非事先获得您的同意，我们不会与任何公司组织和个人共享您的个人信息，但下列情形除外：</p>
+                    <ol>
+                        <li><strong>您主动公开分享、共享信息：</strong>通过由我们或第三方提供的功能，您可以主动公开分享、共享信息（如向其他部门或用户共享素材），在这种情况下共享信息将根据您设置的可见范围进行传送。但只要您不删除被共享的信息，该信息会一直留存在指定范围内；在一些情况下，即使您删除共享信息，该等信息仍可由其他用户或与我们没有关联及不受我们控制的第三方独立地缓存、复制或储存，或通过其他用户或该等第三方保存。</li>
+                        <li><strong>与合作伙伴共享：</strong>我们会与合作伙伴一起为您提供产品/服务，需要共享您的个人信息，包括云存储服务、网络服务等等。详见附件一清单。</li>
+                    </ol>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">4.2 信息转移</h3>
+                    <p>除非获取您的明确同意或根据适用的法律法规的规定或司法要求，我们不会将您的个人信息转移给任何公司、组织或个人，但下列情形除外：</p>
+                    <ol>
+                        <li>随着我们业务的持续发展，我们有可能进行合并、收购、资产转让、清算、被宣告破产等活动，如涉及到个人信息转移，我们会告知您接收方的名称或姓名、以及联系方式，并要求接收方继续履行本政策所要求我们的义务。接收方变更本政策的处理目的、处理方式的，应当按照法律法规的规定重新取得您的同意。</li>
+                    </ol>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">4.3 信息披露</h3>
+                    <p>我们不会对外披露您的个人信息，如必须公开披露时，我们会向您告知此次公开披露的目的、披露信息的类型及涉及的敏感信息，并征得您的明示同意，但根据法律法规的规定、诉讼、争议解决的需要、或按政府主管部门或司法机关依法提出的强制性要求，我们可能会披露您的个人信息。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">4.4 匿名化信息</h3>
+                    <p>根据法律规定，经匿名化处理（指个人信息经过无法识别特定自然人且不能复原的过程）的信息不属于个人信息。对外共享、转移及披露经匿名化处理的信息，将无需另行向您通知并征得您的同意。</p>
+                </div>
+            </div>
+
+            <!-- 第五部分 -->
+            <div class="section">
+                <h2 class="section-title">五、您的权利：您如何管理、修改及删除您的个人信息</h2>
+                <p>在您使用我们的产品/服务期间，您可以访问（包括查阅和复制，下同）、修改、删除您的个人信息，同时您享有撤回对个人信息处理的同意的权利，但法律、行政法规另有规定的除外。</p>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">5.1 访问和修改权</h3>
+                    <p>您有权随时访问和修改您的个人信息，包括用户名、头像、部门信息、上传的素材内容等，访问和修改的路径为：<span class="highlight">我的-个人资料</span>。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">5.2 删除权</h3>
+                    <p>您有权删除您的个人信息，如果您已完成了某项任务或其他业务需求，主动要求删除已完成的素材信息或其他个人信息，您可以与我们的客服联系提出删除个人信息的请求，您的删除请求一旦被响应，我们将在<span class="highlight">7个工作日</span>内删除系统内您的个人信息，同时还将通知从亚太HUB获得您个人信息的第三方实体，要求其及时删除，除非法律法规另有规定，或这些实体获得您的独立授权。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">5.3 注销账号</h3>
+                    <p>您随时可以与我们的客服联系提出注销账号的请求，我们将在<span class="highlight">7个工作日</span>内删除或匿名化处理您的个人信息。注销账号后，我们将停止为您提供商品或服务。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">5.4 撤回同意</h3>
+                    <p>如果您希望撤回您对个人信息处理的同意，可与我们联系，我们将在收到您的请求后<span class="highlight">7个工作日</span>内处理您的请求。但请您理解并同意，当您撤回某些个人信息处理的同意时，将导致与之相应的、必需的产品功能不可用，我们无法继续为您提供撤回同意所对应的特定功能/服务，并且您的撤回不会影响此前基于您的同意而已进行的个人信息处理活动的效力。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">5.5 身份验证</h3>
+                    <p>为保障安全，我们将会先要求您验证自己的身份，然后再处理您的请求。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">5.6 自动化决策</h3>
+                    <p>在某些产品功能中，我们可能仅依据信息系统算法等在内的非人工自动化决策机制作出决定。如果这些决定对您的个人权益有重大影响，您可以联系我们，要求我们予以说明并有权拒绝仅通过自动化决策的方式作出的决定。</p>
+                </div>
+            </div>
+
+            <!-- 第六部分 -->
+            <div class="section">
+                <h2 class="section-title">六、Cookie和SDK</h2>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">6.1 Cookie</h3>
+                    <p>Cookie是网页服务器放在您访问设备上的文本文件，会帮助您在后续访问时调用信息，简化记录您填写个人信息的流程。您有权接受或拒绝Cookie。如果浏览器自动接受Cookie，您可以根据自己的需要修改浏览器的设置以拒绝Cookie。请注意，如果您选择拒绝Cookie，那么您会无法完全体验相应的产品/服务。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">6.2 SDK（软件开发工具包）</h3>
+                    <p><strong>6.2.1</strong> 为保障我们客户端的稳定运行、功能实现，使您能够使用和享受更多的服务及功能，我们的应用中会接入第三方机构的软件工具开发包（SDK）或其他类似的应用程序。我们会要求授权第三方机构按照国家法律规定以及其他任何相关的保密和安全措施来处理个人信息包括不限于您的用户名、用户ID、设备信息、网络状态信息、推送标识、上传文件记录等。共享第三方机构要求获得的权限及使用目的、需要我们披露的个人敏感信息详见下表。</p>
+                    
+                    <p><strong>6.2.2</strong> 我们使用的SDK情况如附件一清单所示，我们将不时地更新清单。也请您理解，即使我们尽可能地及时更新清单，但在一定情况下仍可能会滞后于实际使用情况。若存在清单未列明的第三方SDK，但使用该第三方SDK如需获取您的个人信息或权限时，我们会采取合理的方式另行征得您的同意。</p>
+
+                    <p><strong>6.2.3 主要SDK及权限说明：</strong></p>
+                    <ul>
+                        <li><strong>(1) 极光推送SDK（JPush）：</strong>用于实现消息推送与通知送达（含FCM/APNs等厂商通道），需要获取设备信息、网络状态信息、推送标识（Registration ID）以及通知权限。</li>
+                        <li><strong>(2) 阿里云OSS SDK：</strong>用于实现素材文件的云端存储和上传功能，需要获取网络权限、存储权限。</li>
+                        <li><strong>(3) android.permission.INTERNET：</strong>使用网络权限，应用基础权限，用于网络通信、文件上传下载等基本操作。</li>
+                        <li><strong>(4) android.permission.READ_EXTERNAL_STORAGE和android.permission.WRITE_EXTERNAL_STORAGE：</strong>读写存储权限，用于读取和保存图片、视频、文档等文件。</li>
+                        <li><strong>(5) android.permission.READ_MEDIA_IMAGES和android.permission.READ_MEDIA_VIDEO：</strong>读取媒体文件权限（Android 13+），用于访问图片和视频文件。</li>
+                        <li><strong>(6) android.permission.ACCESS_NETWORK_STATE和android.permission.ACCESS_WIFI_STATE：</strong>网络状态权限，用于检测网络连接状态，优化上传策略。</li>
+                        <li><strong>(7) android.permission.POST_NOTIFICATIONS：</strong>通知权限（Android 13+），用于显示上传进度、任务完成、群聊消息等通知。</li>
+                        <li><strong>(8) android.permission.FOREGROUND_SERVICE和android.permission.FOREGROUND_SERVICE_DATA_SYNC：</strong>前台服务权限，用于后台上传文件时保持上传任务运行。</li>
+                        <li><strong>(9) android.permission.VIBRATE：</strong>震动权限，用于通知震动提醒。</li>
+                        <li><strong>(10) android.permission.WAKE_LOCK：</strong>唤醒锁权限，用于保持设备在后台上传时不休眠。</li>
+                    </ul>
+                </div>
+            </div>
+
+            <!-- 第七部分 -->
+            <div class="section">
+                <h2 class="section-title">七、未成年人保护</h2>
+                
+                <div class="subsection">
+                    <h3 class="subsection-title">7.1 未成年人使用提示</h3>
+                    <p>我们非常重视对未成年人个人信息的保护。根据相关法律法规的规定，若您是<span class="highlight">18周岁以下（特别是未满14周岁）</span>的未成年人，在使用我们的产品/服务前，应事先取得您的家长或法定监护人的书面同意。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">7.2 监护人权利</h3>
+                    <p>若您是未成年人的监护人，当您对您所监护的未成年人的个人信息有相关疑问时，请通过应用内意见反馈功能与我们联系。</p>
+                </div>
+
+                <div class="subsection">
+                    <h3 class="subsection-title">7.3 未成年人信息处理</h3>
+                    <p>我们不会主动直接向未满14周岁的未成年人收集其个人信息。如果发现有未满14周岁的未成年人未取得监护人同意而注册和使用了我们的产品或服务，监护人可以通过应用内意见反馈功能与我们联系，我们会在确认后尽快删除相关未成年人的个人信息。</p>
+                </div>
+            </div>
+
+            <!-- 第八部分 -->
+            <div class="section">
+                <h2 class="section-title">八、本政策的修订</h2>
+                <p>我们会适时对本隐私政策进行修订。当本政策的条款发生修订时，我们会在您登录及版本更新时以推送通知、弹窗的形式向您展示修订后的本政策。请您注意，只有在您点击弹窗中的同意按钮后，我们才会按照更新后的政策处理您的个人信息。</p>
+            </div>
+
+            <!-- 附件 -->
+            <div class="section">
+                <h2 class="section-title">附件一：第三方SDK清单</h2>
+                
+                <div class="sdk-card">
+                    <h4>1. 极光推送SDK（JPush）</h4>
+                    <p><strong>使用目的：</strong>实现消息推送与通知送达（含FCM/APNs等厂商通道）</p>
+                    <p><strong>收集的个人信息：</strong>设备标识信息（如Registration ID）、设备信息、网络状态信息</p>
+                    <p><strong>使用的设备权限：</strong>INTERNET、ACCESS_NETWORK_STATE、ACCESS_WIFI_STATE、POST_NOTIFICATIONS、VIBRATE</p>
+                    <p><strong>第三方主体：</strong>深圳市和讯华谷信息技术有限公司</p>
+                    <p><strong>隐私政策链接：</strong><a href="https://www.jiguang.cn/license/privacy" target="_blank">https://www.jiguang.cn/license/privacy</a></p>
+                </div>
+
+                <div class="sdk-card">
+                    <h4>2. 阿里云OSS SDK</h4>
+                    <p><strong>使用目的：</strong>实现文件云端存储和上传功能</p>
+                    <p><strong>收集的个人信息：</strong>上传的文件内容、文件元数据</p>
+                    <p><strong>使用的设备权限：</strong>INTERNET、READ_EXTERNAL_STORAGE、WRITE_EXTERNAL_STORAGE</p>
+                    <p><strong>第三方主体：</strong>阿里云计算有限公司</p>
+                    <p><strong>隐私政策链接：</strong><a href="https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud202107071654_54837.html" target="_blank">https://terms.aliyun.com/legal-agreement/terms/suit_bu1_ali_cloud/suit_bu1_ali_cloud202107071654_54837.html</a></p>
+                </div>
+
+                <div class="sdk-card">
+                    <h4>3. Flutter框架及其官方插件</h4>
+                    <p><strong>使用目的：</strong>应用开发框架及基础功能实现</p>
+                    <p><strong>收集的个人信息：</strong>根据具体功能而定，严格遵循最小必要原则</p>
+                    <p><strong>使用的设备权限：</strong>根据功能需要动态申请</p>
+                    <p><strong>第三方主体：</strong>Google LLC</p>
+                    <p><strong>隐私政策链接：</strong><a href="https://policies.google.com/privacy" target="_blank">https://policies.google.com/privacy</a></p>
+                </div>
+            </div>
+        </div>
+
+        <!-- 页脚 -->
+        <div class="footer">
+            <p>&copy; 2026 亚太HUB. 保留所有权利。</p>
+            <p>如有任何疑问，请通过应用内意见反馈功能与我们联系。</p>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,27 @@
+#!/bin/sh
+# 拦截把生产 baseUrl 误切到测试环境的提交。
+#
+# 检查 lib/services/api_client.dart 的「暂存内容」中当前生效的 baseUrl，
+# 若 getter 返回 baseUrlTest（测试环境）则阻断提交，避免测试地址带上线。
+#
+# 启用：git config core.hooksPath .githooks
+# 临时跳过（确需提交测试环境时）：git commit --no-verify
+
+API_FILE="lib/services/api_client.dart"
+
+# 文件未进入本次提交则放行
+if ! git diff --cached --name-only | grep -qx "$API_FILE"; then
+  exit 0
+fi
+
+# 取暂存区（即将提交）的内容做判断，而非工作区
+staged_content=$(git show ":$API_FILE" 2>/dev/null)
+
+if printf '%s\n' "$staged_content" | grep -Eq 'get baseUrl[[:space:]]*=>[[:space:]]*baseUrlTest'; then
+  echo "❌ 提交被拦截：$API_FILE 的 baseUrl 指向【测试环境 baseUrlTest】。"
+  echo "   请改回：static String get baseUrl => baseUrlProd;"
+  echo "   如确需提交测试环境，使用：git commit --no-verify"
+  exit 1
+fi
+
+exit 0

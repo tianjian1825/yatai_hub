@@ -1,0 +1,184 @@
+name: yatai_hub
+description: "亚太HUB - 兼职协同平台"
+# The following line prevents the package from being accidentally published to
+# pub.dev using `flutter pub publish`. This is preferred for private packages.
+publish_to: 'none' # Remove this line if you wish to publish to pub.dev
+
+# The following defines the version and build number for your application.
+# A version number is three numbers separated by dots, like 1.2.43
+# followed by an optional build number separated by a +.
+# Both the version and the builder number may be overridden in flutter
+# build by specifying --build-name and --build-number, respectively.
+# In Android, build-name is used as versionName while build-number used as versionCode.
+# Read more about Android versioning at https://developer.android.com/studio/publish/versioning
+# In iOS, build-name is used as CFBundleShortVersionString while build-number is used as CFBundleVersion.
+# Read more about iOS versioning at
+# https://developer.apple.com/library/archive/documentation/General/Reference/InfoPlistKeyReference/Articles/CoreFoundationKeys.html
+# In Windows, build-name is used as the major, minor, and patch parts
+# of the product and file versions while build-number is used as the build suffix.
+version: 1.0.0+1
+
+environment:
+  sdk: ^3.12.0
+
+# Dependencies specify other packages that your package needs in order to work.
+# To automatically upgrade your package dependencies to the latest versions
+# consider running `flutter pub upgrade --major-versions`. Alternatively,
+# dependencies can be manually updated by changing the version numbers below to
+# the latest version available on pub.dev. To see which dependencies have newer
+# versions available, run `flutter pub outdated`.
+dependencies:
+  flutter:
+    sdk: flutter
+  flutter_localizations:
+    sdk: flutter
+
+  # 网络请求
+  dio: ^5.11.0
+
+  # 文件选择
+  image_picker: ^1.2.3
+  image_picker_android: ^0.8.13+19
+  image_picker_platform_interface: ^2.11.1
+  file_picker: ^11.0.3
+
+  # 视频播放
+  video_player: ^2.12.0
+
+  # 保存图片到相册
+  gal: ^2.3.3
+
+  # 权限处理
+  permission_handler: ^12.0.3
+
+  # 本地存储
+  shared_preferences: ^2.5.5
+
+  # 路径处理
+  path_provider: ^2.1.6
+  path: ^1.9.1
+
+  # 图片缓存
+  cached_network_image: ^3.4.1
+  flutter_cache_manager: ^3.4.1
+
+  # 日期格式化
+  intl: ^0.20.2
+
+  # URL 启动器（用于打开文件）
+  url_launcher: ^6.3.2
+
+  # WebView
+  webview_flutter: ^4.14.0
+
+  # 网络状态监听
+  connectivity_plus: ^7.2.0
+
+  # 本地通知
+  flutter_local_notifications: ^22.2.0
+
+  # 灵动岛
+  live_activities: ^2.5.1
+
+  # 分享功能
+  share_plus: ^12.0.2
+
+  # 接收系统分享（相册/文件管理「分享到本 App」）→ 直接入上传队列
+  flutter_sharing_intent: ^2.0.4
+
+  # 极光推送（含 FCM / APNs 厂商通道）
+  jpush_flutter: ^3.4.9
+
+  # 群聊 IM：本地离线消息库（iOS/Android 原生 sqlite）
+  sqflite: ^2.4.3
+
+  # 群聊 IM：消息列表「滚到任意 index」（引用跳转定位 / 新消息定位，支持 reverse）
+  scrollable_positioned_list: ^0.3.8
+  flutter_timezone: ^5.1.0
+
+dev_dependencies:
+  # Widget / 单元测试
+  flutter_test:
+    sdk: flutter
+
+  # The "flutter_lints" package below contains a set of recommended lints to
+  # encourage good coding practices. The lint set provided by the package is
+  # activated in the `analysis_options.yaml` file located at the root of your
+  # package. See that file for information about deactivating specific lint
+  # rules and activating additional ones.
+  flutter_lints: ^6.0.0
+
+  # 图标生成工具
+  flutter_launcher_icons: ^0.14.4
+
+  # 启动图生成工具
+  flutter_native_splash: ^2.4.8
+
+# For information on the generic Dart part of this file, see the
+# following page: https://dart.dev/tools/pub/pubspec
+
+# The following section is specific to Flutter packages.
+flutter:
+
+  # The following line ensures that the Material Icons font is
+  # included with your application, so that you can use the icons in
+  # the material Icons class.
+  uses-material-design: true
+
+  # To add assets to your application, add an assets section, like this:
+  assets:
+    - assets/images/
+    - assets/images/tab/
+    - assets/images/task-center/
+
+  # An image asset can refer to one or more resolution-specific "variants", see
+  # https://flutter.dev/to/resolution-aware-images
+
+  # For details regarding adding assets from package dependencies, see
+  # https://flutter.dev/to/asset-from-package
+
+  # To add custom fonts to your application, add a fonts section here,
+  # in this "flutter" section. Each entry in this list should have a
+  # "family" key with the font family name, and a "fonts" key with a
+  # list giving the asset and other descriptors for the font. For
+  # example:
+  # fonts:
+  #   - family: Schyler
+  #     fonts:
+  #       - asset: fonts/Schyler-Regular.ttf
+  #       - asset: fonts/Schyler-Italic.ttf
+  #         style: italic
+  #   - family: Trajan Pro
+  #     fonts:
+  #       - asset: fonts/TrajanPro.ttf
+  #       - asset: fonts/TrajanPro_Bold.ttf
+  #         weight: 700
+  #
+  # For details regarding fonts from package dependencies,
+  # see https://flutter.dev/to/font-from-package
+
+# flutter_launcher_icons 配置
+flutter_launcher_icons:
+  android: true
+  ios: true
+  image_path: "assets/images/app_logo.png"
+  min_sdk_android: 24
+  remove_alpha_ios: true
+
+# flutter_native_splash 配置
+flutter_native_splash:
+  # 背景色（白色）
+  color: "#FFFFFF"
+
+  # Android 11 及以下：使用全屏启动图
+  image: splash.png
+
+  # Android 配置 - 居中显示（不拉伸）
+  android_gravity: fill
+  android_screen_orientation: portrait
+
+  # iOS 配置 - 保持比例居中（不拉伸变形）
+  ios_content_mode: scaleAspectFit
+
+  # 保持当前 iOS 启动页行为，不额外隐藏状态栏
+  fullscreen: false
